@@ -1,0 +1,9 @@
+node_modules/
+
+# backend
+hr-system-backend/node_modules
+hr-system-backend/.env
+
+# frontend
+hr-system-frontend/node_modules
+hr-system-frontend/dist

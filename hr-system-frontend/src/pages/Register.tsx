@@ -21,8 +21,8 @@ const Register: React.FC = () => {
     try {
       await api.post('/auth/register', formData);
       navigate('/login');
-    } catch (err) {
-      console.error(err);
+    } catch (err: any) {
+      console.log(err.response?.data);;
       setError('Registration failed');
     }
   };

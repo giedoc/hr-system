@@ -48,6 +48,7 @@ const login = async (req, res) => {
 
     res.json({ token });
   } catch (err) {
+    console.error("Register Error:", err);  
     res.status(500).json({ error: 'Login failed' });
   }
 };

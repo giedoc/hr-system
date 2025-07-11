@@ -8,7 +8,10 @@ const authMiddleware = require('./middleware/auth');
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: '*', // ya da 'https://hr-system-tan.vercel.app'
+  credentials: true
+}));
 app.use(express.json());
 
 app.use('/api/auth', authRoutes); // public
